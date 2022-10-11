@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@400;500;600;700&display=swap');
+
+body {
+    background: #3D56FF;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+article,
+a {
+    font-family: 'Asap Condensed', sans-serif;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 4.5rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3D56FF;
+}
+
+p {
+    font-size: 1.25rem;
+    opacity: 0.65;
+}
+
+article {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+    min-height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+}
+
+a {
+    font-size: 1.75rem;
+}
+
+.fa-facebook-f {
+    color: #3D56FF;
+}
+
+.fa-instagram {
+    color: violet;
+}
+
+.card {
+    border-radius: 16px;
+    height: 455px;
+}
+
+.card .card-body {
+    padding: 1.5rem;
+}
+
+.card .img-card {
+    background: #ff156f;
+    height: 180px;
+    width: 180px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.card .img-card .img {
+    width: 100%;
+    position: absolute;
+}
+
+@media (max-width: 1400px) {
+    .card {
+        min-height: 455px;
+        height: auto;
+    }
+}
+
+@media (max-width: 625px) {
+    .card {
+        min-height: unset;
+        height: unset;
+    }
+
+    article {
+        min-height: unset !important;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 1.15rem;
+        opacity: 0.65;
+    }
+    h5 {
+        font-size: 1.75rem;
+        font-weight: 600;
+    }
+    h6 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #3D56FF;
+    }
+    article {
+        font-size: 1.1rem;
+        color: #333;
+        font-weight: 600;
+        min-height: 80px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    a {
+        font-size: 1.75rem;
+    }
+}
