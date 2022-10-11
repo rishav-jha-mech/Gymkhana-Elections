@@ -47,7 +47,7 @@ const legends = [
 
 legends.map((data,index) =>{
     const card = document.createElement('div');
-    card.className = 'col-12 col-md-4 col-lg-3 my-3'
+    card.className = 'swiper-slide'
     card.innerHTML = `
         <div class="card">
             <div class="card-body text-center">
