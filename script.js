@@ -1,26 +1,30 @@
 const container = document.querySelector('#card-container');
 
-const legends = [
+const LEGENDS = [
     {
         name: 'Sankhadeep Ghosh',
         image: './img/Sankhadeep.png',
         post: 'President',
         motto: 'Dont settle for average lets achieve the best together.',
-        color: '#325895'
+        color: '#325895',
+        facebook : 'https://www.facebook.com/100086375027463/posts/pfbid02TZesipTayjS6zzQKfxKXcpFM31YTC7ZhxtygRyU57289hwRpbruuBfw8gt9qYGmTl/',
+        instagram : 'https://www.instagram.com/p/CjahXqZJPxT/?igshid=NmNmNjAwNzg='
     },
     {
         name: 'Satyam Shorya Jha',
         image: './img/Satyam.png',
-        post: 'Vide President',
+        post: 'Vice President',
         motto: 'Acknowledge what we have lost, accept what we have, and what we can do together.',
-        color: '#F2404C'
+        color: '#F2404C',
+        instagram: 'https://www.instagram.com/p/CjdCwsMBQ_b/?igshid=MDJmNzVkMjY='
     },
     {
         name: 'MD Adnan Hussain',
         image: './img/Adnan.png',
         post: 'General Secretary',
         motto: 'We cannot be seperated in interest or divided in purpose we stand together until the end.',
-        color: '#F57D02'
+        color: '#F57D02',
+        instagram: 'https://www.instagram.com/achieve_with_adnan/'
     },
     {
         name: 'Sankalp Mishra',
@@ -45,7 +49,7 @@ const legends = [
     },
 ];
 
-legends.map((data,index) =>{
+LEGENDS.map((data,index) =>{
     const card = document.createElement('div');
     card.className = 'swiper-slide'
     card.innerHTML = `
@@ -60,15 +64,12 @@ legends.map((data,index) =>{
                     <h6 class="fw-bold">${data.post}</h6>
                     <article class="my-3">"${data.motto}"</article>
                     <div class="d-flex justify-content-center items-center">
-                        <a href="/" target="_blank" class="mx-2">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="/" target="_blank" class="mx-2">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
+                    ${ data.facebook ? `<a class="mx-2" href="${data.facebook}" target="_blank"><i class="fab fa-facebook"></i></a>` : `<a class="mx-2" href="/" target="_blank"><i class="fab fa-facebook"></i></a>`}
+                    ${ data.instagram ? `<a class="mx-2" href="${data.instagram}" target="_blank"><i class="fab fa-instagram"></i></a>` : `<a class="mx-2" href="/" target="_blank"><i class="fab fa-instagram"></i></a>`}
                     </div>
             </div>
         </div>
     `;
     container.appendChild(card);
 })
+
