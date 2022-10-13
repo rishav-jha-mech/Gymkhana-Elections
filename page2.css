@@ -1,0 +1,41 @@
+.man .card {
+    background: rgba(255, 255, 255, 0.15) !important;
+}
+.man .card{
+    border-radius: 16px;
+    min-height: 636px !important;
+}
+.man .card .card-body .head{
+    font-size: 2rem;
+}
+.accordion-button{
+    border-radius: 16px;
+    background: #ff156f !important;
+}
+.accordion-item{
+    border-radius: 10px;
+    overflow: hidden;
+}
+.accordion-item:first-of-type {
+    border-radius: 10px !important;
+}
+.accordion-item:last-of-type {
+    border-radius: 10px !important;
+}
+.accordion-button:not(.collapsed) {
+    color: unset !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none;
+}
+.accordion-button:not(.collapsing) {
+    color: unset !important;
+    background: white !important;
+    box-shadow: none !important;
+    border: none;
+}
+.real{
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: 500;
+}

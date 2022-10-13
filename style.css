@@ -3,7 +3,10 @@
 body {
     background: #3D56FF;
 }
-
+.container-fluid,
+.container {
+    min-height: 100vh;
+}
 h1,
 h2,
 h3,
@@ -60,17 +63,17 @@ a {
     color: rgb(255, 67, 255);
 }
 
-.card {
+.sw-card {
     border-radius: 16px;
     height: 455px;
     width: 301px;
 }
 
-.card .card-body {
+.sw-card .sw-card-body {
     padding: 1.5rem;
 }
 
-.card .img-card {
+.sw-card .img-card {
     background: #ff156f;
     height: 180px;
     width: 180px;
@@ -79,9 +82,8 @@ a {
     overflow: hidden;
 }
 
-.card .img-card .img {
+.sw-card .img-card .img {
     width: 100%;
-    position: absolute;
 }
 
 
@@ -93,14 +95,14 @@ a {
 }
 
 @media (max-width: 1400px) {
-    .card {
+    .sw-card {
         min-height: 455px;
         height: auto;
     }
 }
 
 @media (max-width: 625px) {
-    .card {
+    .sw-card {
         min-height: 400px;
         height: unset;
         width: 100%;
