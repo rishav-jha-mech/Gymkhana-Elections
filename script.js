@@ -7,6 +7,7 @@ const LEGENDS = [
         post: 'President',
         motto: 'Dont settle for average lets achieve the best together.',
         color: '#325895',
+        time: 10000,
         facebook : 'https://www.facebook.com/100086375027463/posts/pfbid02TZesipTayjS6zzQKfxKXcpFM31YTC7ZhxtygRyU57289hwRpbruuBfw8gt9qYGmTl/',
         instagram : 'https://www.instagram.com/p/CjahXqZJPxT/?igshid=NmNmNjAwNzg='
     },
@@ -16,7 +17,16 @@ const LEGENDS = [
         post: 'Vice President',
         motto: 'Acknowledge what we have lost, accept what we have, and what we can do together.',
         color: '#F2404C',
+        time: 2000,
         instagram: 'https://www.instagram.com/p/CjdCwsMBQ_b/?igshid=MDJmNzVkMjY='
+    },
+    {
+        name: 'Kumari Swati',
+        image: './img/Swati.png',
+        post: 'Girls Students Representative (UG)',
+        motto: 'Coming together is a beginning, keeping together is progress, working together is success.',
+        color: '#D3D4E9',
+        time: 2000,
     },
     {
         name: 'MD Adnan Hussain',
@@ -24,6 +34,7 @@ const LEGENDS = [
         post: 'General Secretary',
         motto: 'We cannot be seperated in interest or divided in purpose we stand together until the end.',
         color: '#F57D02',
+        time: 2000,
         instagram: 'https://www.instagram.com/achieve_with_adnan/'
     },
     {
@@ -31,27 +42,23 @@ const LEGENDS = [
         image: './img/Sankalp.png',
         post: 'Asst. General Secretary (Cultural)',
         motto: 'Tradition is not the workship of ashes, but the preservation of fire.',
-        color: '#EEC110'
+        color: '#EEC110',
+        time: 2000,
     },
     {
         name: 'Esha Mandal',
         image: './img/Esha.png',
         post: 'Asst. General Secretary (Sports)',
         motto: 'All succesfull dugouts have three aspects in common infrastructure, strategy and trust.',
-        color: '#1CD7CC'
-    },
-    {
-        name: 'Kumari Swati',
-        image: './img/Swati.png',
-        post: 'Girls Students Representative (UG)',
-        motto: 'Coming together is a beginning, keeping together is progress, working together is success.',
-        color: '#D3D4E9'
+        color: '#1CD7CC',
+        time: 2000,
     },
 ];
 
 LEGENDS.map((data,index) =>{
     const card = document.createElement('div');
     card.className = 'swiper-slide'
+    card.setAttribute('data-swiper-autoplay',data.time)
     card.innerHTML = `
         <div class="card">
             <div class="card-body text-center">
